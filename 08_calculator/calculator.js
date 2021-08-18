@@ -31,7 +31,14 @@ const power = function() {
 };
 
 const factorial = function() {
-	
+	let factor = arguments[0];
+  let result = 1;
+  let  i = 1;
+  while (i <= factor) {
+    result *= i;
+    i++;
+  }
+  return result;
 };
 
 module.exports = {
